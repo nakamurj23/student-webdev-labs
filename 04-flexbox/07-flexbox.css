@@ -1,18 +1,43 @@
 .flex-container {
+  display: flex;
   background-color: rgb(190, 190, 231);
 }
 
 /* Flex Container 1 */
-
+.flex-container-1 {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 /* Flex Container 2 */
+.flex-container-2 {
+  flex-direction: row-reverse;
+  justify-content: right;
+  flex-wrap: wrap;
+}
 
 /* Flex Container 3 */
+.flex-container-3 {
+  height: 400px;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
 
 /* use height: 400px; on the container */
 
 /* Flex Container 4 */
+.flex-container-4 {
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+}
 
 /* Flex Container 5 */
+.flex-container-5 {
+  flex-direction: row;
+  align-items: center;
+}
 
 /* Flex Container 6 */
 
