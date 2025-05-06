@@ -22,12 +22,34 @@
 
 /* Grid Container 3 */
 .grid-container-3 {
+  height: 400px;
   display: grid;
-  grid-template-columns: 1fr 4fr 4fr;
+  grid-template-columns: 10% 45% 45%;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
   gap: 0.5rem;
 }
+
+.grid-container-3 .item8 {
+  grid-column: span 2;
+}
+
 /* use height: 400px; on the container */
 
 /* Grid Container 4 */
+.grid-container-4 {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.grid-container-4 .item1 {
+  grid-row: span 2;
+}
+
+.grid-container-4 .item6 {
+  grid-column: span 2;
+}
 
 /* use height: 600px; on the container */
