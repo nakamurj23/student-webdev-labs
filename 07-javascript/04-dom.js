@@ -15,7 +15,14 @@ function handleClick() {
 // when the user enters input text, copy the user input to the output area
 
 // fetch JavaScript objects representing specific elements in the DOM
-
+let userInput2 = document.querySelector("#userInput2");
+let outputLabel = document.querySelector("#inputEventExample");
+const newOutput = document.createElement("div");
+//newOutput.setAttribute("class", "output");
+outputLabel.append(newOutput);
 // add an event listener on the target element
-
+userInput2.addEventListener("input", onInput);
 // callback function to handle event
+function onInput() {
+  newOutput.textContent = userInput2.value;
+}
